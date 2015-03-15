@@ -8,7 +8,7 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int a, b, c, i = 0;
+	int a, b, c;
 	int in_or_dec;
 
 
@@ -30,7 +30,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		while (a <= b)
 		{
-			cout << test.getcurrent() << endl;
+			cout << test.getcurrent() << endl;						//loop terminates when increment cannot increase
 			test++;
 			a += c;
 		}
@@ -51,7 +51,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		while (a >= b)
 		{
-			cout << test.getcurrent() << endl;
+			cout << test.getcurrent() << endl;					//loop terminates when decrement cannot decrease
 			test--;
 			a -= c;
 		}
